@@ -1,0 +1,30 @@
+<!-- EXTENDS BASE.HTML TEMPLATE -->
+{% extends "MyProjectApp/base.html" %}
+
+<!-- LOAD STATIC -->
+{% load static %}
+
+<!-- CODE OF BODY PAGE -->
+{% block content %}
+
+<div id="notfound">
+    <div class="notfound">
+        <div class="notfound-bg">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>oops!</h1>
+        <h2>Error 500 : Error Interno del Servidor</h2>
+        <a href="/">Home</a>
+        <div class="notfound-social">
+            <a href="https://www.instagram.com/cototowifi/?hl=es" aria-label="Instagram"><i
+                    class="fa fa-instagram"></i></a>
+            <a href="https://mobile.twitter.com/cototowifi" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/cototowifi/" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.cototowifi.org/" aria-label="Web"><i class="fa fa-globe"></i></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
