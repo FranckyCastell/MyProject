@@ -1,4 +1,4 @@
-# MyProject
+# PROJECT DJANGO
 
 That's a Project web written in Python / Django
 
