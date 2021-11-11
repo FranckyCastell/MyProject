@@ -2,7 +2,7 @@
 
 That's a Project web written in Python / Django
 
-To install the packages used type the following command : ( pip install -r requirements.txt ) 
+To install the packages used type the following command : pip install -r requirements.txt
 
 
 ```
