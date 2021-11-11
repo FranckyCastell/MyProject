@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="shop">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact">Contacto</a></li>
 
                 {% if request.user.is_authenticated %}
@@ -38,11 +38,11 @@
     <div class="container">
         <div class="masthead-subheading">Bienvenido a nuestra Tienda</div>
         <div class="masthead-heading text-uppercase">Brand Mark Text</div>
-        <a class="btn btn-outline-warning btn-xl text-uppercase" href="shop">Tienda</a>
+        <a class="btn btn-outline-warning btn-xl text-uppercase" href="#tienda">Tienda</a>
     </div>
 </header>
 
-<section class="page-section bg-light" id="portfolio">
+<section class="page-section bg-light" id="tienda">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Categorías</h2>
@@ -53,18 +53,17 @@
             {% for category in categories %}
 
                 <div class="col-lg-4 col-sm-6 mb-4">
+                    
                     <div class="portfolio-item border border-2 rounded-3">
-                        <a href="shop" class="portfolio-link">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="bi bi-box-arrow-up-right fa-2x"></i></div>
-                            </div>
+                        <a href="shop/category/{{category.id}}" class="portfolio-link">
                             <img width="350" height="250" src="{{category.image.url}}" alt="{{category.description}}" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">{{category.name}}</div>
-                            <div class="portfolio-caption-subheading text-muted">{{category.description}}</div>
+                            <div class="lead fw-bold text-center">{{category.name}}</div>
+                            <div class="portfolio-caption-subheading text-muted text-center mb-3">{{category.description}}</div>
                         </div>
                     </div>
+
                 </div>
             
             {% endfor %}

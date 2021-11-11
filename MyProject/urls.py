@@ -9,6 +9,7 @@ urlpatterns = [
     path('', include('Register.urls')),
     path('', include('Contact.urls')),
     path('', include('Shop.urls')),
+    path('', include('Blog.urls')),
 ]
 
 handler404 = 'MyProjectApp.views.handler404'
