@@ -1,19 +1,68 @@
-# PROJECT DJANGO
+# My Project
 
-That's a Project web written in Python / Django
+_Este proyecto consiste en un Proyecto Web donde aplico todo lo aprendido con Django._
 
-To install the packages used type the following command : pip install -r requirements.txt
+## Comenzando 🚀
 
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+Mira **Deployment** para conocer como desplegar el proyecto.  
+
+
+### Pre-requisitos 📋
 
 ```
-This project contains different applications which are the following :
+Python 3
+pip3
+```
 
-- An application that is a store to buy products with their categories.
+### Instalación 🔧
 
-- An application so that a user can login or register.
+_Clonando el repositorio_
 
-- An application for contact to solve doubts with the client.
+```
+git clone https://github.com/FranckyCastell/MyProject.git
+```
 
-- An application so that users can write, it would be like a blog.
+_Instalando las Dependencias_
 
-  ```
+```
+pip3 install -r requirements.txt
+```
+
+_Realizando Migraciones (nos dirigimos dentro de la carpeta)_
+
+```
+python3 manage.py migrate
+```
+
+_Ejecutando el Proyecto_
+
+```
+python3 manage.py runserver
+```
+
+
+## Despliegue 📦
+
+_Descubrir si el proyecto tiene vulnerabilidades con el despliegue
+
+```
+python3 manage.py check --deploy
+```
+
+## Construido con 🛠️
+
+* [Django](https://www.djangoproject.com/) - Python Framweork Backend
+* [Bootstrap](https://getbootstrap.com/) - CSS Framework
+
+## Autores ✒️
+
+* **Francesc Castell Portella** - *Trabajo Inicial - Documentación* - [franckycastell](https://github.com/franckycastell)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (Apache License 2.0) - mira el archivo [LICENSE.md](LICENSE.md) para detalles.
+
+
+---
